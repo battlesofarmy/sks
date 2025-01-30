@@ -1,19 +1,3 @@
-// import PresentDisplay from '../components/PresentDisplay'
-// import axios from 'axios';
-
-// export default async function EEEpresent() {
-//   const res = await axios.get("https://present.muntasir3301.xyz/present/eee");
-//   const phypresent = await res.data;
-
-//   return (
-//     <>
-//         <PresentDisplay presents={phypresent} title={"EEE Lab Attendence"}/>
-//     </>
-//   )
-// }
-
-
-
 "use client";
 
 import { useEffect, useState } from "react";
@@ -24,19 +8,14 @@ export default function EEEpresent() {
   const [eeepresent, setEEEPresent] = useState([]);
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const res = await axios.get("https://present.muntasir3301.xyz/present/eee");
+    axios
+      .get("https://present.muntasir3301.xyz/present/eee")
+      .then((res) => {
         setEEEPresent(res.data);
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      }
-    };
+        console.log(res.data);
+      })
+      .catch((err) => console.log(err));
+  }, []); // Empty dependency array ensures it runs once when component mounts
 
-    fetchData();
-  }, []);
-
-  return (
-    <PresentDisplay presents={eeepresent} title={"EEE Lab Attendance"} />
-  );
+  return <PresentDisplay presents={eeepresent} title={"EEE Lab Attendance"} />;
 }

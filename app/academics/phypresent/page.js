@@ -24,16 +24,9 @@ export default function PhyPresnt() {
   const [phypresent, setPhyPresent] = useState([]);
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const res = await axios.get("https://present.muntasir3301.xyz/present/phy");
-        setPhyPresent(res.data);
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      }
-    };
-
-    fetchData();
+      axios.get("https://present.muntasir3301.xyz/present/phy")
+      .then((res)=>setPhyPresent(res.data))
+      .catch((err)=> console.log(err))
   }, []);
 
   return (
