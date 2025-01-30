@@ -13,7 +13,7 @@ import LargeMenu from "./LeargeMenu";
     { name: "About Me", href: "/about" },
     { name: "Blog", href: "/blog" },
     { name: "Academics", href: "/academics" },
-    { name: "Contact", href: "/contact" },
+    { name: "Add", href: "/add" },
     { name: "Phy", href: "/academics/phypresent" },
     { name: "EEE", href: "/academics/eeepresent" },
   ];

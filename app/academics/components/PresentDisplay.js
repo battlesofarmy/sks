@@ -7,7 +7,8 @@ import { RxCross2 } from "react-icons/rx";
 
 export default async function PresentDisplay({title, presents}) {
 
-  const stuRes = await axios.get("http://192.168.0.194:5000/student");
+  // const stuRes = await axios.get("http://192.168.0.194:5000/student");
+  const stuRes = await axios.get("https://present.muntasir3301.xyz/student");
   const students = await stuRes.data;
 
   

@@ -2,7 +2,7 @@ import PresentDisplay from '../components/PresentDisplay'
 import axios from 'axios';
 
 export default async function EEEpresent() {
-  const res = await axios.get("http://localhost:5000/present/eee");
+  const res = await axios.get("https://present.muntasir3301.xyz/present/eee");
   const phypresent = await res.data;
 
   return (
