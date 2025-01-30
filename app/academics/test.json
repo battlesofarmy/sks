@@ -1,0 +1,85 @@
+[
+  [
+    {
+      "id" : "01", 
+      "name" : "Nishi"
+    },{
+      "id" : "02", 
+      "name" : "Tonima"
+    },{
+      "id" : "03", 
+      "name" : "Tayaba"
+    },{
+      "id" : "04", 
+      "name" : "Oshim"
+    },{
+      "id" : "05", 
+      "name" : "Sharif"
+    },{
+      "id" : "06", 
+      "name" : "Kotha"
+    },{
+      "id" : "07", 
+      "name" : "Sajim"
+    },{
+      "id" : "08", 
+      "name" : "Lamia"
+    },{
+      "id" : "09", 
+      "name" : "Nadia"
+    },{
+      "id" : "10", 
+      "name" : "Anjar"
+    },{
+      "id" : "12", 
+      "name" : "Abir"
+    },{
+      "id" : "13", 
+      "name" : "Tahmina"
+    },{
+      "id" : "14", 
+      "name" : "Shuchona"
+    },{
+      "id" : "15", 
+      "name" : "Khaiza"
+    },{
+      "id" : "18", 
+      "name" : "Muntasir"
+    },{
+      "id" : "20", 
+      "name" : "Shatabdi"
+    },{
+      "id" : "21", 
+      "name" : "Joyanti"
+    },{
+      "id" : "22", 
+      "name" : "Johfa"
+    }
+  ],
+
+  [
+    {
+        "course" : "phy",
+        "date" : {
+          "day" : "fri",
+          "month" :"feb 08"
+        },
+        "present" : ["a" , "p", "p"]
+      }
+],
+
+[
+  {
+    "course": "phy",
+    "date": {
+      "day": "fri",
+      "month": "feb 08"
+    },
+    "present": ["a", "p", "p"]
+  }
+  
+]
+
+
+
+]
